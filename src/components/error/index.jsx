@@ -5,7 +5,7 @@ const ErrorBanner = props => {
   return (
     <div className={styles.error}>
       <h1 className={styles.error__title}>
-        Oopppssss...Something went wrong.
+        Ops... Something went wrong.
       </h1>
       <h3>Try again later</h3>
       <Link to="/" className={styles.error__back}>

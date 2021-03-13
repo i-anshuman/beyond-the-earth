@@ -1,3 +1,53 @@
 {
-  "basename": "/"
+  "basename": "/",
+  "title": "Beyond The Earth",
+  "description": "Explore The Incredible Sky Using NASA API.",
+  "developer": {
+    "name": "Anshuman",
+    "url": "https://i-anshuman.github.io",
+    "social": [
+      {
+        "title": "Blog",
+        "link": "https://i-anshuman.github.io/blog",
+        "icon": "fas fa-blog"
+      },
+      {
+        "title": "LinkedIn",
+        "link": "https://www.linkedin.com/in/iAnshumanGupta/",
+        "icon": "fab fa-linkedin-in"
+      },
+      {
+        "title": "Twitter",
+        "link": "https://twitter.com/_AnshumanGupta",
+        "icon": "fab fa-twitter"
+      },
+      {
+        "title": "Github",
+        "link": "https://github.com/i-anshuman",
+        "icon": "fab fa-github"
+      }
+    ]
+  },
+  "source": "https://github.com/i-anshuman/beyond-the-earth",
+  "api": "https://api.nasa.gov/",
+  "sections": [
+    {
+      "title": "Astronomy Picture of the Day",
+      "image": "https://res.cloudinary.com/ianshuman/image/upload/c_scale,h_750,q_100,w_750/v1615561302/assets/apod_judvrt.jpg",
+      "link": "/apod",
+      "desc": "One of the most popular websites at NASA and across all federal agencies."
+    },
+    {
+      "title": "Mars Rover Photos",
+      "image": "https://res.cloudinary.com/ianshuman/image/upload/c_scale,h_750,q_100,w_750/v1615563043/assets/rover_utspx9.jpg",
+      "link": "/curiosity-rover-photos",
+      "desc": "Images data gathered by NASA's Curiosity, Opportunity, and Spirit rovers on Mars."
+    },
+    {
+      "title": "Mars Weather",
+      "image": "https://res.cloudinary.com/ianshuman/image/upload/c_scale,h_750,q_100,w_750/v1615562107/assets/mars_ghsutp.jpg",
+      "link": "/mars-weather",
+      "desc": "Weather measurements on the surface of Mars for the last seven available Sols (Martian Days)."
+    }
+  ]
 }

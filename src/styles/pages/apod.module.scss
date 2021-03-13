@@ -1,0 +1,11 @@
+.apod {
+  padding: 50px 20px;
+  color: var(--on-background);
+
+  &__page_title {
+    margin: 0 0 30px 0;
+    width: 100%;
+    text-align: center;
+    font-family: var(--font-secondary);
+  }
+}

@@ -1,0 +1,33 @@
+.error {
+  position: relative;
+  background-color: var(--grey-900);
+  box-shadow: -5px -5px 0px var(--error);
+  border-radius: 5px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-primary);
+
+  &__title {
+    text-align: center;
+    font-family: var(--font-secondary);
+    color: var(--error);
+    margin-top: 0;
+  }
+
+  &__back {
+    display: inline-block;
+    border: 2px solid var(--on-background);
+    border-radius: 5px;
+    padding: 10px 20px;
+    display: inherit;
+    transition: all 0.4s ease;
+
+    &:hover {
+      color: var(--error);
+      border-color: var(--error);
+    }
+  }
+}

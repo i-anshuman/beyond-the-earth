@@ -1,0 +1,6 @@
+@mixin loader($animation-name: "") {
+  color: transparent;
+  background: linear-gradient(100deg, var(--loader) 30%, var(--loader-flash) 50%, var(--loader) 70%);
+  background-size: 400%;
+  animation: #{$animation-name} 1.2s ease-in-out infinite;
+}

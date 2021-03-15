@@ -22,6 +22,7 @@ const ApodPage = props => {
           copyright={response.copyright}
           title={response.title}
           explanation={response.explanation}
+          mediaType={response.media_type}
         />
       }
     </main>

@@ -2,15 +2,27 @@ import PropTypes from 'prop-types';
 import TextWrap from '../text-wrap';
 import styles from '../../styles/components/apod.module.scss';
 
-const Apod = ({ src, date, copyright, title, explanation}) => {
+const Apod = ({ src, date, copyright, title, explanation, mediaType}) => {
   return (
     <div className={styles.apod}>
       <figure className={styles.apod__fig}>
-        <img
-          src={src}
-          alt={title}
-          className={styles.apod__img}
-        />
+        {
+          mediaType === 'image' ?
+          <img
+            src={src}
+            alt={title}
+            className={styles.apod__img}
+          /> :
+          <iframe
+            className={styles.apod__video}
+            allowfullscreen="1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            title={title}
+            src={src}
+            frameborder="0"
+          >
+          </iframe>
+        }
         <figcaption className={styles.apod__caption}>
           { date && <p>Date: {date}</p> }
           { copyright && <p>&copy; {copyright}</p> }
@@ -29,7 +41,8 @@ Apod.propTypes = {
   copyright: PropTypes.string,
   src: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  explanation: PropTypes.string.isRequired
+  explanation: PropTypes.string.isRequired,
+  mediaType: PropTypes.oneOf(['video', 'image']).isRequired
 };
 
 Apod.defaultProps = {

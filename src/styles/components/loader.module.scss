@@ -3,12 +3,19 @@
   user-select: none;
   & h2,
   & p,
-  &__img {
+  & span,
+  &__img,
+  &__img_rover {
     @include loader("loading");
   }
   &__img {
     width: 100%;
     height: 260px;
+  }
+  &__img_rover {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
   }
 }
 

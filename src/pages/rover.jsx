@@ -6,6 +6,7 @@ import { getDate } from '../lib';
 import { api } from '../app';
 import pages from '../styles/pages/page.module.scss';
 import styles from '../styles/pages/rover.module.scss';
+import RoverLoader from '../components/loader/rover';
 import ErrorBanner from '../components/error';
 
 const RoverPhotosPage = props => {
@@ -25,6 +26,7 @@ const RoverPhotosPage = props => {
       <h1 className={pages.page__title}>
         Mars Rover Photos
       </h1>
+      { waiting && <RoverLoader /> }
       { error && <ErrorBanner /> }
       {
         response &&
